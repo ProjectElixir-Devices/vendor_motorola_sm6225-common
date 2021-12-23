@@ -188,12 +188,6 @@ dex_import {
 }
 
 dex_import {
-	name: "moto-telephony",
-	owner: "motorola",
-	jars: ["proprietary/framework/moto-telephony.jar"],
-}
-
-dex_import {
 	name: "uimgbalibrary",
 	owner: "motorola",
 	jars: ["proprietary/product/framework/uimgbalibrary.jar"],
@@ -205,6 +199,13 @@ dex_import {
 	owner: "motorola",
 	jars: ["proprietary/product/framework/uimgbamanagerlibrary.jar"],
 	product_specific: true,
+}
+
+dex_import {
+	name: "moto-telephony",
+	owner: "motorola",
+	jars: ["proprietary/system_ext/framework/moto-telephony.jar"],
+	system_ext_specific: true,
 }
 
 dex_import {

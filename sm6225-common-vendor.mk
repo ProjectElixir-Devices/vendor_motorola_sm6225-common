@@ -6,7 +6,7 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/motorola/sm6225-common
 
 PRODUCT_COPY_FILES += \
-    vendor/motorola/sm6225-common/proprietary/etc/permissions/moto-telephony.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/moto-telephony.xml \
+    vendor/motorola/sm6225-common/proprietary/system_ext/etc/permissions/moto-telephony.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/moto-telephony.xml \
     vendor/motorola/sm6225-common/proprietary/etc/permissions/privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-qti.xml \
     vendor/motorola/sm6225-common/proprietary/etc/sysconfig/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/qti_whitelist.xml \
     vendor/motorola/sm6225-common/proprietary/lib64/libaptXHD_encoder.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libaptXHD_encoder.so \
@@ -910,9 +910,9 @@ PRODUCT_PACKAGES += \
     ims \
     qcrilmsgtunnel \
     WfdCommon \
-    moto-telephony \
     uimgbalibrary \
     uimgbamanagerlibrary \
+    moto-telephony \
     com.qti.dpmframework \
     dpmapi \
     qcrilhook \
