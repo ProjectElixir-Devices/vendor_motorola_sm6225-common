@@ -822,7 +822,9 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm6225-common/proprietary/vendor/radio/qcril_database/upgrade/36_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/36_version_qcrildb.sql \
     vendor/motorola/sm6225-common/proprietary/vendor/radio/qcril_database/upgrade/37_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/37_version_qcrildb.sql \
     vendor/motorola/sm6225-common/proprietary/vendor/radio/qcril_database/upgrade/38_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/38_version_qcrildb.sql \
+    vendor/motorola/sm6225-common/proprietary/vendor/radio/qcril_database/upgrade/39_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/39_version_qcrildb.sql \
     vendor/motorola/sm6225-common/proprietary/vendor/radio/qcril_database/upgrade/3_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/3_version_qcrildb.sql \
+    vendor/motorola/sm6225-common/proprietary/vendor/radio/qcril_database/upgrade/41_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/41_version_qcrildb.sql \
     vendor/motorola/sm6225-common/proprietary/vendor/radio/qcril_database/upgrade/4_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/4_version_qcrildb.sql \
     vendor/motorola/sm6225-common/proprietary/vendor/radio/qcril_database/upgrade/5_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/5_version_qcrildb.sql \
     vendor/motorola/sm6225-common/proprietary/vendor/radio/qcril_database/upgrade/6_version_qcrildb.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/6_version_qcrildb.sql \

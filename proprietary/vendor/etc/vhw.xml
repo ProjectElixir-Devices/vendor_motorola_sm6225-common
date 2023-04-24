@@ -1668,7 +1668,7 @@
 		</mappings>
 	</device>
 
-	<device name="devon" version="0.4">
+	<device name="devon" version="0.7">
 
 		<!-- Features list variable hardware components for this device -->
 		<features>
@@ -1693,6 +1693,8 @@
 				<item>ecompass</item>
 				<!-- Digital TV function -->
 				<item>dtv</item>
+				<!--SKU variant -->
+				<item>sku_variant</item>
 			</string-array>
 		</features>
 
@@ -1735,6 +1737,7 @@
 			<string-array name="ram/.range">
 				<item>4GB</item>
 				<item>6GB</item>
+				<item>8GB</item>
 			</string-array>
 
 			<!-- use result of storage HW detection to fill the field -->
@@ -1791,16 +1794,27 @@
 				<item>false</item>
 			</string-array>
 
+			<string name="sku_variant/.cmdline">androidboot.</string>
+			<string-array name="sku_variant/.range">
+				<item>n</item>
+			</string-array>
+
 			<string name="dtv/.auto">default=false</string>
 			<string name="dtv/.chosen">mmi,</string>
 			<string name="dtv/.system">ro.vendor.hw.</string>
 			<string-array name="dtv/.range">
 				<item>false</item>
 			</string-array>
-
 		</constraints>
 
 		<mappings>
+			<sku-variants export="ro.vendor.hw.sku_variant" writeback="sku_variant">
+				<!-- ... same format as before ... -->
+				<variant name="n">
+					<string name="nfc">st</string>
+				</variant>
+			</sku-variants>
+
 			<!-- Variants describe mapping of feature combinations to device fingerprints,
 				to be set in property indicated by "export" -->
 			<variants export="ro.vendor.hw.variant" append="ro.vendor.product.device,ro.vendor.product.name,ro.product.device,ro.product.name">
@@ -1814,7 +1828,12 @@
 				<!-- ... SKUs without ecompass ... -->
 				<!-- ... same format as variants/products ... -->
                                 <variant name="f">
+					<string name="ro.vendor.mot.factory">true</string>
+					<string name="nfc">false</string>
+				</variant>
+				<variant name="fn">
                                         <string name="ro.vendor.mot.factory">true</string>
+                                        <string name="nfc">st</string>
                                 </variant>
                                 <variant name="b">
                                         <string name="dualsim">false</string>
