@@ -4,6 +4,6 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifneq ($(filter devon hawao rhode,$(TARGET_DEVICE)),)
+ifneq ($(filter borneo caprip devon hawao rhode,$(TARGET_DEVICE)),)
 
 endif
