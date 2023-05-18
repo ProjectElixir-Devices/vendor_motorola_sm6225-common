@@ -805,7 +805,6 @@ PRODUCT_PACKAGES += \
     uimgbaservice \
     ImsRcsService \
     QtiTelephonyService \
-    atfwd \
     datastatusnotification \
     WfdService \
     dpmserviceapp \
